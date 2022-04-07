@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fussBallList">
+
+    <fragment
+        android:id="@+id/fussBallList"
+        android:name="com.mmisoft.features.fragments.FootballTeamListFragment"
+        android:label="FussBallList" >
+        <action
+            android:id="@+id/navigate_details_screen"
+            app:destination="@id/toFootballTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toFootballTeamFragment"
+        android:name="com.mmisoft.features.fragments.FootballTeamFragment"
+        android:label="FussballFragment" />
+</navigation>
